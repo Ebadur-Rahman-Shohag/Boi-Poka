@@ -1,5 +1,6 @@
 import "./App.css";
 import bookImage from "/assets/books.png";
+import Book from "./components/book";
 
 function App() {
   return (
@@ -52,6 +53,22 @@ function App() {
             <img className="w-full h-full object-fit" src={bookImage} alt="" />
           </div>
         </section>
+        {/* ---------------------------------------------------------------------------------------------------- */}
+        {/* books list section */}
+        <section className="mt-28">
+          <h1 className="text-[40px] font-bold text-center">Books</h1>
+          {/* books cards container */}
+          <div className="mt-9 grid grid-cols-3 gap-6 ">
+            {/* book card */}
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+          </div>
+        </section>
+
       </main>
       {/* footer section */}
       <footer></footer>
