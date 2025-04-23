@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 function Navbar() {
     return (
@@ -11,14 +12,14 @@ function Navbar() {
                 </div>
                 {/* links */}
                 <div className="flex items-center justify-center gap-4 text-lg text-[#131313CC] font-semibold">
-                    <a
+                    <NavLink
                         className="border border-[#23BE0A] rounded-lg px-5 py-[14px]"
-                        href="#"
+                        to="/"
                     >
                         Home
-                    </a>
-                    <a href="#">Listed Books</a>
-                    <a href="#">Pages to Read</a>
+                    </NavLink>
+                    <NavLink to="/listed">Listed Books</NavLink>
+                    <NavLink to="/read">Pages to Read</NavLink>
                 </div>
                 {/* buttons */}
                 <div className="space-x-4">
